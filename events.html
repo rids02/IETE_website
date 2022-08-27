@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iete_website</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/events.css"/>
+<style>
+  /*body{
+    font-family: Montserrat, sans-serif;
+    position: relative;
+    background: #191919;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*background-image: url('img/events_bg.webp');
+    
+}*/
+body {
+	background: linear-gradient(-45deg, #380140,#191919, #470202 );
+	background-size: 400% 400%;
+	animation: gradient 5s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+</style>
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar fixed-top navbar-expand-lg design_navbar navbar-dark p-0 md-3">
+        <div class="container-fluid image_stack">
+          <a href="#" class="navbar-brand">
+            <div class="row">
+                <div class="col-md-12 logo_light"><img src="img/logo_light.png" alt="logo_light" class="img-fluid"></div>
+                <div class="col-md-6 logo_dark"></div>
+            </div>
+        </a>
+
+
+            <button
+            type='button'
+            class="navbar-toggler"
+            data-bs-target="#navbarNav"
+            data-bs-toggle="collapse"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle Navbar"
+            >
+
+                <span class="navbar-toggler-icon toggler-style"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="mx-auto"></div>
+                <header>
+                    <!-- <img style="width:71.35%;float:right; z-index:1;" src="https://techfest.org/2021/home/Navbar/TN.svg" alt="Navbar"> -->
+                
+                <ul class="navbar-nav">
+                    <li class="nav-item mx-3">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a href="gallery.html" class="nav-link">Gallery</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a href="teams.html" class="nav-link">Teams</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a href="events.html" class="nav-link">Events</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a href="sponsors.html" class="nav-link">Sponsors</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a href="contact.html" class="nav-link">Contact us</a>
+                    </li>
+                </ul>
+            </header>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- events -->
+    <section class="events">
+
+
+    <div class="wrapper text-light">
+        <div class="title text-center display-3">
+          List of Events
+        </div>
+        
+        <div class="tabs_wrap p-0">
+          <ul class="p-0">
+            <li data-tabs="renaissance" 
+            data-mdb-toggle="animation" 
+            data-mdb-animation-reset="true" 
+            data-mdb-animation="fade-in-down">Renaissance</li>
+
+            <li data-tabs="oscillations">Oscillations</li>
+            <li data-tabs="all_events" class="active">All Events</li>
+          </ul>
+        </div>
+
+        <div class="container">
+
+          <ul>
+
+            <li class="item_wrap renaissance online">
+              <div class="item">
+
+                <div class="item_left">
+                  <!-- <div class="img">
+                  </div> -->
+
+                  <div class="data"
+                  dat-aos="fade-right">
+                    <p class="name">UPCOMING EVENT 1</p>
+                    <p class="distance">--/--/----</p>
+                  </div>
+                </div>
+
+                <div class="item_right">
+                  <div class="status">Upcoming</div>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="item_wrap renaissance past">
+              <div class="item">
+                <div class="item_left">
+                  <!-- <div class="img">
+                  </div> -->
+                  <div class="data"
+                  dat-aos="fade-right">
+                    <p class="name">PAST EVENT 1</p>
+                    <p class="distance">--/--/----</p>
+                  </div>
+                </div>
+                <div class="item_right">
+                  <div class="status">Past</div>
+                </div>
+              </div>
+            </li>
+
+            <li class="item_wrap renaissance online">
+              <div class="item">
+
+                <div class="item_left">
+                  <!-- <div class="img">
+                  </div> -->
+
+                  <div class="data"
+                  dat-aos="fade-right">
+                    <p class="name">UPCOMING EVENT 2</p>
+                    <p class="distance">--/--/----</p>
+                  </div>
+                </div>
+
+                <div class="item_right">
+                  <div class="status">Upcoming</div>
+                </div>
+
+              </div>
+            </li>
+
+            
+            <li class="item_wrap renaissance online">
+              <div class="item">
+
+                <div class="item_left">
+                  <!-- <div class="img">
+                  </div> -->
+
+                  <div class="data"
+                  dat-aos="fade-right">
+                    <p class="name">UPCOMING EVENT 2</p>
+                    <p class="distance">--/--/----</p>
+                  </div>
+                </div>
+
+                <div class="item_right">
+                  <div class="status">Upcoming</div>
+                </div>
+
+              </div>
+            </li>
+            
+            <li class="item_wrap renaissance online">
+              <div class="item">
+
+                <div class="item_left">
+                  <!-- <div class="img">
+                  </div> -->
+
+                  <div class="data"
+                  dat-aos="fade-right">
+                    <p class="name">UPCOMING EVENT 2</p>
+                    <p class="distance">--/--/----</p>
+                  </div>
+                </div>
+
+                <div class="item_right">
+                  <div class="status">Upcoming</div>
+                </div>
+
+              </div>
+            </li>
+            
+            <li class="item_wrap renaissance online">
+              <div class="item">
+
+                <div class="item_left">
+                  <!-- <div class="img">
+                  </div> -->
+
+                  <div class="data"
+                  dat-aos="fade-right">
+                    <p class="name">UPCOMING EVENT 2</p>
+                    <p class="distance">--/--/----</p>
+                  </div>
+                </div>
+
+                <div class="item_right">
+                  <div class="status">Upcoming</div>
+                </div>
+
+              </div>
+            </li>
+
+
+            <li class="item_wrap oscillations past">
+              <div class="item">
+                <div class="item_left">
+                  <!-- <div class="img">
+                    <img src="https://i.imgur.com/jQj1I8E.png" alt="">
+                  </div> -->
+                  <div class="data"
+                  dat-aos="fade-right">
+                    <p class="name">PAST EVENT 1</p>
+                    <p class="distance">--/--/----</p>
+                  </div>
+                </div>
+                <div class="item_right">
+                  <div class="status">Past</div>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </div>   
+    </section>  
+<!-- footer begins -->
+    <section class="footer">
+        <div class="social">
+            <a href="#">
+                <i class="fab fa-instagram"></i>
+                <span class="glyphicon white-icon glyphicon-cog"></span>
+            </a>
+            <a href="#"><i class="fab fa-snapchat"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+        </div>
+
+        <p class="copyright">
+            IETE KJSIEIT @ 2022
+        </p>
+    </section>
+<!-- footer ends -->
+
+    <script>
+        var tabs = document.querySelectorAll(".tabs_wrap ul li");
+        var renaissances = document.querySelectorAll(".renaissance");
+        var oscillationss = document.querySelectorAll(".oscillations");
+        var all = document.querySelectorAll(".item_wrap");
+        
+        tabs.forEach((tab)=>{
+          tab.addEventListener("click", ()=>{
+            tabs.forEach((tab)=>{
+              tab.classList.remove("active");
+            })
+            tab.classList.add("active");
+            var tabval = tab.getAttribute("data-tabs");
+        
+            all.forEach((item)=>{
+              item.style.display = "none";
+            })
+        
+            if(tabval == "renaissance"){
+              renaissances.forEach((renaissance)=>{
+                renaissance.style.display = "block";
+              })
+            }
+            else if(tabval == "oscillations"){
+              oscillationss.forEach((oscillations)=>{
+                oscillations.style.display = "block";
+              })
+            }
+            else{
+              all.forEach((item)=>{
+                item.style.display = "block";
+              })
+            }
+        
+          })
+        })  
+    </script>
+
+  <!-- aos -->
+  <script>
+    AOS.init();
+  </script>
+
+
+    <script src="js/particles.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/app.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

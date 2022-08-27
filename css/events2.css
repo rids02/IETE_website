@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+    
+    /* body{
+      background: #7fc469;
+      color: #565e6b;
+    } */
+
+.wrapper .title{
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    border-bottom: 1px solid #ebedec;
+}
+.wrapper{
+    width: 100%;
+    height: 100%;
+    background: #fff;
+  }
+
+    /* body{
+        font-family: Montserrat, sans-serif;
+        background: #191919;
+    }
+    
+    .wrapper{
+      width: 100%;
+      height: 100%;
+      background: #fff;
+    }
+    
+
+    
+    .wrapper .tabs_wrap{
+      padding: 20px;
+      border-bottom: 1px solid #ebedec;
+    }
+    
+    .wrapper .tabs_wrap ul{
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+    }
+    
+    .wrapper .tabs_wrap ul li{
+      width: 135px;
+        text-align: center;
+        background: #e9ecf1;
+        border-right: 1px solid #c1c4c9;
+        padding: 13px 15px;
+      cursor: pointer;
+      -webkit-transition: all 0.2s ease;
+      -o-transition: all 0.2s ease;
+      transition: all 0.2s ease;
+    }
+    
+    .wrapper .tabs_wrap ul li:first-child{
+      border-top-left-radius: 25px;
+      border-bottom-left-radius: 25px;
+    }
+    
+    .wrapper .tabs_wrap ul li:last-child{
+      border-right: 0px;
+      border-top-right-radius: 25px;
+      border-bottom-right-radius: 25px;
+    }
+    
+    .wrapper .tabs_wrap ul li:hover,
+    .wrapper .tabs_wrap ul li.active{
+      background: #7fc469;
+      color: #fff;
+    }
+    
+    .wrapper .container .item_wrap{
+      padding: 10px 20px;
+      border-bottom: 1px solid #ebedec;
+      cursor: pointer;
+    }
+    
+    .wrapper .container .item_wrap:hover{
+      background: #e9ecf1;
+    }
+    
+    .wrapper .container .item{
+      position: relative;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+    }
+    
+    .item_wrap .item .item_left{
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+    }
+    
+    .item_wrap .item_left img{
+      width: 70px;
+      height: 70px;
+      display: block;
+    }
+    
+    .item_wrap .item_left .data{
+      margin-left: 20px;
+    }
+    
+    .item_wrap .item_left .data .name{
+      font-weight: 600;
+    }
+    
+    .item_wrap .item_left .data .distance{
+      color: #7f8b9b;
+      font-size: 14px;
+      margin-top: 3px;
+    }
+    
+    .item_wrap .item_right .status{
+      position: relative;
+      color: #77818d;
+    }
+    
+    .item_wrap .item_right .status:before{
+      content: "";
+      position: absolute;
+      top: 5px;
+        left: -12px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #b3bbc8;
+    }
+    
+    .item_wrap.offline .item_right .status{
+      color: #b3bbc8; 
+    }
+    
+    .item_wrap.online .item_right .status:before{
+      background: #7fc469;
+    } */
+
+/* navbar styling */
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: #191919;
+}
+.banner-image{
+    position: relative;
+    background-size: contain, cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('img/background.jpg');
+}
+
+.design_navbar{
+  background: rgba(24, 24, 16, .2);
+  backdrop-filter: blur(15px);
+  border: 2px solid rgba(255, 255, 255, 0.05);
+  background-clip: padding-box;
+  box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
+}
+
+button:focus { 
+    box-shadow: none !important
+}
+h1{
+    font-weight:700;
+}
+.design_navbar{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('https://techfest.org/2021/home/Navbar/TN.svg');
+    float: right;
+}
+.image_stack{
+    position: relative;
+}
+
+.img-fluid{
+    height: auto;
+    width: 80px;
+}
+
+.logo_light{
+    position: absolute;
+    height: 76px;
+    width: 100px;
+}
+.logo_dark{
+    height: 76px;
+    width: 100px;
+}
+
+
+button:focus { 
+    box-shadow: none !important
+}
+
+h1{
+    font-weight:700;
+}
+
+.image_stack{
+    position: relative;
+}
+
+.img-fluid{
+    height: auto;
+    width: 80px;
+}
+
+.logo_light{
+    position: absolute;
+    height: 76px;
+    width: 100px;
+}
+.logo_dark{
+    height: 76px;
+    width: 100px;
+}
+
+/* footer */
+.footer{
+    font-weight: 400;
+    padding: 40px 0;
+    width: 100%;
+}
+
+.footer .social {
+    text-align: center;
+    padding-bottom: 25px;
+    color: #4b4c4d;
+}
+
+.footer .social a{
+    font-size: 24px;
+    color: inherit;
+    border: 1px solid #ccc;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 1;
+}
+
+.footer .social a:hover{
+    opacity: 1;
+}
+
+.footer ul {
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height:1vh;
+    margin-bottom:0;
+    text-align: center;
+}
+
+.footer ul li a {
+    color: inherit;
+    text-decoration: none ;
+    opacity: 1;
+}
+
+.footer ul li{
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.footer ul li a:hover{
+    opacity: 1;
+}
+
+
+.footer .copyright{
+    margin-top: 2px;
+    text-align: center;
+    font-size: 13px;
+    color: #aaa;
+}
+    
+    

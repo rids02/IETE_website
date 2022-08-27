@@ -1,0 +1,231 @@
+body{
+    font-family: Montserrat, sans-serif;
+    background: #191919;
+}
+button:focus { 
+    box-shadow: none !important
+}
+h1{
+    font-weight:700;
+}
+  
+  
+  /* =================nav-bar ends ================= */
+  
+  /* =====================------ Gallery start ------===================== */
+  .main {    
+    font: 14px/1.5 "Fira Sans", sans-serif;
+  }
+  
+  .col {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .slide {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /* 
+      Visibility delay gives the previously hovered element time to slide out before disappearing.
+      Remove the `visibility` transition to slide in current element without sliding out previous element
+    */
+    transition: all 0.275s ease-in-out, visibility 0s 0.275s;
+    visibility: hidden;
+    will-change: transform;
+    transform: translateY(100%);
+  }
+  
+  .row:hover ~ .row .slide {
+    transform: translateY(-100%);
+  }
+  .row:hover .slide {
+    transform: translateX(100%);
+  }
+  .row:hover .col:hover ~ .col .slide {
+    transform: translateX(-100%);
+  }
+  .row:hover .col:hover .slide {
+    transform: none;
+    visibility: visible;
+    transition-delay: 0s;
+  }
+  
+  /* Pen styling */
+  * {
+    box-sizing: border-box;
+  }
+  
+  
+  /* ==================heading-gallery=============== */
+  .heading {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin: 1.5em 0.5rem 1em;
+    text-align: center;
+    padding: 10px 20px;
+    color: #03e9f4;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+    position: relative;
+    display: inline-block;
+  }
+  
+  h1 span {
+    position: absolute;
+    display: block;
+  }
+  
+  h1 span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: btn-anim1 1s linear infinite;
+  }
+  
+  @keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+    50%,100% {
+      left: 100%;
+    }
+  }
+  h1 span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+  }
+  @keyframes btn-anim2 {
+    0% {
+      top: -100%;
+    }
+    50%,100% {
+      top: 100%;
+    }
+  }
+  
+  h1 span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+  }
+  
+  @keyframes btn-anim3 {
+    0% {
+      right: -100%;
+    }
+    50%,100% {
+      right: 100%;
+    }
+  }
+  
+  h1 span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s
+  }
+  
+  @keyframes btn-anim4 {
+    0% {
+      bottom: -100%;
+    }
+    50%,100% {
+      bottom: 100%;
+    }
+  }
+  /* ==================heading-gallery ends =============== */
+  
+  .container {
+    margin: 0 auto;
+    padding: 2rem;
+    max-width: 1200px;
+  }
+  
+  .row {
+    display: flex;
+  }
+  
+  .col {
+    color: #fff;
+    flex: 1 1 auto;
+    min-height: 260px;
+    position: relative;
+  }
+  .col h2 {
+    font-weight: 300;
+    font-size: 1.33333rem;
+    line-height: 1.25;
+    margin: 0;
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    z-index: 0;
+  }
+  
+  .col:nth-child(2) {
+    min-width: 20%;
+  }
+  
+  .col:nth-child(4) {
+    min-width: 33%;
+  }
+  
+  .col:nth-child(3) + .col:nth-child(3) {
+    min-width: 50%;
+  }
+  
+  .photo-container {
+    background: #0f0523 50% 50%/cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: 1s;
+    transform-origin: bottom right;
+  }
+  .photo-container::before {
+    background: linear-gradient(transparent, rgba(67, 17, 51, 0.5), #000320);
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .col:hover .photo-container {
+    transform: scale(1.25);
+  }
+  
+  .slide {
+    background: rgba(25, 1, 21, 0.8);
+    padding: 0 1.5rem;
+  }
+  
+  /* =====================------ Gallery ends ------===================== */
