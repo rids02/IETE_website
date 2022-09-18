@@ -7,6 +7,27 @@
     box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
 } */
 
+/* =================== scroll-bar ============= */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #2b2b2b #191919;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #191919;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #2b2b2b;
+    border-radius: 10px;
+    border: 0px solid #000000;
+  }
+/* ====================== scroll-bar end============== */
 
 #core_{
     border-radius: 50%; /*1*/
