@@ -13,6 +13,7 @@
 
     <!-- Font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;display=swap'>
     <link rel='stylesheet' href='https://static.fontawesome.com/css/fontawesome-app.css'>
@@ -119,92 +120,48 @@
   <div class="main">
 
     <div class="heading">
-      <h1 class="gallery display-3 fw-bold text-light">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        GALLERY
-      </h1>
+      <h1 contenteditable="true">GALLERY</h1>
     </div>
   
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <div class="photo-container small" style="background-image:url('img/events/e1.JPG')"></div>
-          <div class="slide">
-            <p>Autem possimus perspiciatis, eaque quos repudiandae modi labore sed repellat dolorum magnam praesentium expedita esse tempore saepe nulla.</p>
-          </div>
-        </div>
-        <div class="col">
-          <div class="photo-container" style="background-image:url('img/events/e2.JPG')"></div>
-          <div class="slide">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <div class="photo-container" style="background-image:url('img/events/e3.JPG')"></div>
-          <div class="slide">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <div class="photo-container" style="background-image:url('img/events/e4.JPG')"></div>
-          <div class="slide">
-            <p>Facere illo pariatur necessitatibus fugit quo impedit, quae, corporis placeat recusandae dolor ipsa nobis!</p>
-          </div>
-        </div>
-        <div class="col">
-          <div class="photo-container" style="background-image:url('img/events/e5.JPG')"></div>
-          <div class="slide">
-            <p>Quam molestiae ipsa sapiente mollitia, nobis.</p>
-          </div>
-        </div>
-        <div class="col">
-          <div class="photo-container" style="background-image:url('img/events/e1.JPG')"></div>
-          <div class="slide">
-            <p>Autem possimus perspiciatis, eaque quos repudiandae modi labore sed repellat dolorum magnam praesentium expedita esse tempore saepe nulla.</p>
-          </div>
-        </div>
-        <div class="col">
-          <div class="photo-container" style="background-image:url('img/events/e2.JPG')"></div>
-          <div class="slide">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <div class="photo-container" style="background-image:url('img/events/e3.JPG');"></div>
-          <div class="slide">
-            <p>Facere illo pariatur necessitatibus fugit quo impedit, quae, corporis placeat recusandae dolor ipsa nobis!</p>
-          </div>
-        </div>
-        <div class="col">
-          <div class="photo-container" style="background-image:url('img/events/e4.JPG')"></div>
-          <div class="slide">
-            <p>Quam molestiae ipsa sapiente mollitia, nobis.</p>
-          </div>
-        </div>
-        <div class="col">
-          <div class="photo-container" style="background-image:url('img/events/e5.JPG');"></div>
-          <div class="slide">
-            <p>Autem possimus perspiciatis, eaque quos repudiandae modi labore sed repellat dolorum magnam praesentium expedita esse tempore saepe nulla.</p>
-          </div>
-        </div>
-        <div class="col">
-          <div class="photo-container" style="background-image:url('img/events/e1.JPG')"></div>
-          <div class="slide">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          </div>
-        </div>
-      </div>
+    
+    <!-- partial:index.partial.html -->
+    <div class="renaissance">
+        <section>
+            <img src="img/events/e1.JPG" />
+            <img src="img/events/e2.JPG" />
+            <img src="img/events/e3.JPG" />
+            <img src="img/events/e4.JPG" />
+            <img src="img/events/e5.JPG" />
+            <img src="img/events/e1.JPG" /> 
+            <img src="img/events/e2.JPG" /> 
+            <img src="img/events/e3.JPG" /> 
+            <img src="img/events/e4.JPG" /> 
+            <img src="img/events/e5.jpg" />
+            <img src="img/events/e1.JPG" />
+          </section>
     </div>
-  </div>
+<!-- partial -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!-- footer begins -->
 <section class="footer">
@@ -226,6 +183,9 @@
 <!-- footer ends -->
 
 <!-- Javascript -->
+
+<script src="js/gallery.js"></script>
+
 
     <script type="text/javascript">
         window.addEventListener("scroll", function(){
