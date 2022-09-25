@@ -113,10 +113,8 @@
       <div class="tabs_wrap p-0">
         <ul class="p-0">
           <li data-tabs="renaissance" data-mdb-toggle="animation" data-mdb-animation-reset="true"
-            data-mdb-animation="fade-in-down">Renaissance</li>
-
+            data-mdb-animation="fade-in-down" class="active">Renaissance</li>
           <li data-tabs="oscillations">Oscillations</li>
-          <li data-tabs="all_events" class="active">All Events</li>
         </ul>
       </div>
 
@@ -137,7 +135,7 @@
                   <div class="data" dat-aos="fade-right">
                     <p class="name item_left"><strong>International Seminar on Super Capacitors & Storage of
                         Energy</strong></p>
-                    <p class="distance item_left">16/10/2021</p>
+                    <p class="distance item_left">17/10/2021</p>
                   </div>
                 </div>
 
@@ -150,7 +148,7 @@
             </button>
           </li>
 
-          <li class="item_wrap oscillations past">
+          <li class="item_wrap other past">
             <button type="button" class="btn text-light item_left" data-bs-toggle="modal" data-bs-target="#event2">
 
               <div class="item">
@@ -174,6 +172,32 @@
 
             </button>
           </li>
+
+          <li class="item_wrap oscillations past">
+            <button type="button" class="btn text-light item_left" data-bs-toggle="modal" data-bs-target="#event3">
+
+              <div class="item">
+
+                <div class="item_left">
+                  <!-- <div class="img">
+                  </div> -->
+
+                  <div class="data" dat-aos="fade-right">
+                    <p class="name item_left"><strong>Not International Seminar hehe on Super Capacitors & Storage of
+                        Energy</strong></p>
+                    <p class="distance item_left">16/10/2021</p>
+                  </div>
+                </div>
+
+                <div class="item_right">
+                  <div class="status">Past</div>
+                </div>
+
+              </div>
+
+            </button>
+          </li>
+
 
 
         </ul>
@@ -240,6 +264,36 @@
         </div>
         <!-- Modal ends -->
 
+        <!-- Modal begins-->
+        <div class="modal fade" id="event3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable text-light ">
+            <div class="modal-content border border-success">
+
+              <div class="modal-header bg-dark">
+                <h5 class="modal-title " id="exampleModalLabel">Event 2</h5>
+                <button type="button" class="btn btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+
+              <div class="modal-body bg-dark">
+
+                <div class="row">
+                  <div class="col-5">
+                    <img src="/img/events/e2.JPG" class="img-thumbnail" alt="e1">
+                  </div>
+
+                  <div class="col-7">
+                    <p><strong>Event name</strong></p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                    <button type="button" class="btn btn-md text-info">Register</button>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal ends -->
+
 
       </div>
     </div>
@@ -266,9 +320,9 @@
 
   <script>
     var tabs = document.querySelectorAll(".tabs_wrap ul li");
+
     var renaissances = document.querySelectorAll(".renaissance");
     var oscillationss = document.querySelectorAll(".oscillations");
-    var all = document.querySelectorAll(".item_wrap");
 
     tabs.forEach((tab) => {
       tab.addEventListener("click", () => {
@@ -290,11 +344,6 @@
         else if (tabval == "oscillations") {
           oscillationss.forEach((oscillations) => {
             oscillations.style.display = "block";
-          })
-        }
-        else {
-          all.forEach((item) => {
-            item.style.display = "block";
           })
         }
 
