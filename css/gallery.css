@@ -97,6 +97,55 @@ section img:hover {
   opacity: 0.9;
 }
 
+.container__single{
+  padding: 1rem 0 1rem 0 ;
+}
+
+
+.container__single {
+  position: relative;
+  overflow: visible;
+}
+
+.picture {
+  width: 95%;
+  height: 95%;
+  transition: transform 2.0s ease;
+}
+/* =====================hover animation===================== */
+.container__single:hover .picture {
+  transform: scale(1.2);
+  transition: 0.9s ease-in;
+  opacity: 1;
+}
+
+.caption {
+  font: 14px/1.5 Montserrat, sans-serif;
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  /* background-color: rgb(55, 55, 55); */
+  bottom: -30px;
+  margin-bottom: 0px;
+  font-size: 0.9rem;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  transition: opacity .9s ease, bottom 0.9s ease;
+  opacity: 0;
+  padding: 0.2em 0.5em;
+
+}
+
+
+.container__single:hover .caption {
+  opacity: 1;
+  bottom: 0px;
+  margin-bottom: 0px;
+}
+
+
+/* =====================hover animation ends ===================== */
+
 /* ========== Animation =========== */
 section img {
   animation: rise 400ms ease-out backwards;
