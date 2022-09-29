@@ -167,7 +167,7 @@ color: #fff;
     content: "";
     position: absolute;
     top: 5px;
-    left: -12px;
+    left: -8px;
     width: 8px;
     height: 8px;
     border-radius: 50%;
@@ -286,5 +286,7 @@ img.logo_light{
     color: #aaa;
 }
 
-
+a{
+  text-decoration: inactivecaptiontext;
+}
 
