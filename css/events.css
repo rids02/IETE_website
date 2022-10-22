@@ -134,7 +134,7 @@ color: #fff;
 
 .wrapper .container .item .item_left .img{
     /* border-right: blue solid 2em; */
-    /* margin-right: 1em; */
+/*     margin-right: 1em; */
   }
 
 .item_wrap .item .item_left{
@@ -167,7 +167,7 @@ color: #fff;
     content: "";
     position: absolute;
     top: 5px;
-    left: -8px;
+    left: -18px;
     width: 8px;
     height: 8px;
     border-radius: 50%;
@@ -175,7 +175,8 @@ color: #fff;
   }
 
 .item_wrap.past .item_right .status{
-    color: #b3bbc8; 
+  color: #b3bbc8; 
+  margin: 50px;
   }
   
 .item_wrap.online .item_right .status:before{
@@ -187,7 +188,10 @@ color: #fff;
 }
 
 button:focus { 
-    box-shadow: none !important
+  box-shadow: none !important;
+}
+.btn_style{
+  width:100%;
 }
 h1{
     font-weight:700;
