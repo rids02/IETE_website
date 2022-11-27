@@ -48,18 +48,35 @@
 }
 
 .contact-links {
-    background: linear-gradient(#011414,#200353) border-box;
+/*     background: linear-gradient(#011414,#200353) border-box; */
+/*   background: #242222; */
+background: rgba( 233, 231, 237, 0.15 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 3px );
+-webkit-backdrop-filter: blur( 3px );
+/* border-radius: 10px; */
+border-left: 1px solid rgba( 255, 255, 255, 0.18 );
+border-top: 1px solid rgba( 255, 255, 255, 0.18 );
+border-bottom: 1px solid rgba( 255, 255, 255, 0.18 );
     
-    background-color: #16003B;
-    color: #f7f2f2;
+/*     background-color: #16003B; */
+/*     color: #f7f2f2; */
     /* background: radial-gradient( circle at 55% 92%, lightgray 0 12%, transparent 12.2%), radial-gradient( circle at 94% 72%, lightgray 0 10%, transparent 10.2%), radial-gradient( circle at 20% max(78%, 350px), lightgray 0 7%, transparent 7.2%), #191919; */
     border-radius: 10px 0 0 10px;
 }
 
 .contact-form-wrapper {
-    background: linear-gradient(#200353, #16003B,#060324);
+/*     background: linear-gradient(#200353, #16003B,#060324);
     background-color: #060324;
-    border-radius: 0 10px 10px 0;
+    border-radius: 0 10px 10px 0; */
+background: rgba( 233, 231, 237, 0.15 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 3px );
+-webkit-backdrop-filter: blur( 3px );
+border-radius: 0 10px 10px 0;
+border-right: 1px solid rgba( 255, 255, 255, 0.18 );
+border-top: 1px solid rgba( 255, 255, 255, 0.18 );
+border-bottom: 1px solid rgba( 255, 255, 255, 0.18 );
    
 }
 
