@@ -227,3 +227,6 @@ textarea:valid+label {
     letter-spacing: 2px;
     cursor: pointer;
 }
+#contact{
+  margin-top: 4em;
+}
