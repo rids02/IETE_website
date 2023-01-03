@@ -54,6 +54,9 @@
 
 }
 
+.core_title{
+  margin-top: 3em;
+}
 #subcore_{
     border-radius: 50%; /*1*/
     border:3px solid transparent;
